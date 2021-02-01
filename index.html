@@ -3,9 +3,99 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
     <title>Web App Dashboard</title>
 </head>
 <body>
+    <header>
+        <h1>YourApp</h1>
+        <h2 class="headline">Dashboard</h2>
+    <div class="main-header-search">
+    <input type="search" placeholder="Search">
+</div>
+<div class="alert" id="alert" >
+    <!-- JS will insert alert here -->
+    </div>
     
+</div>
+     <div class="bell-icon"> 
+    </div>
+    </header>
+    <nav>
+
+    </nav>
+<main class="grid-container">
+        <!-- line graph charts -->
+<section class="traffic">
+    <div class="traffic-header">
+    <h3>Traffic</h3>
+    <ul class="traffic-nav">
+    <li class="traffic-nav-link">Hourly</li>
+    <li class="traffic-nav-link">Daily</li>
+    <li class="traffic-nav-link active">Weekly</li>
+    <li class="traffic-nav-link">Monthly</li>
+    </ul>
+    </div>
+    <div class="widget-container-full">
+    <!-- element line graph will attach to -->
+    <canvas id="traffic-chart"></canvas>
+    </div>
+    </section>
+    <section class="daily">
+    <h3>Daily Traffic</h3>
+    <div class="widget-container-half">
+    <canvas id="daily-chart"></canvas>
+    </div>
+</section>
+<div class="social-container">
+    <div class="social-image"
+    <!-- inline SVG not included for brevity -->
+    </div>
+    <div class="social-text">
+    <p>Twitter</p>
+    <p>10,345</p>
+    </div>
+    </div>
+    <!-- add two more social containers and child
+    elements for other social media items -->
+    </div>
+    </div>
+<section class="members">
+        <h3>New Members</h3>
+        <div class="members-container">
+        <img src="images/Sept2018Profile.jpg"
+        class="profile-image">
+        <div class="members-text">
+        <p>Victoria Chambers</p>
+        <a href="#">victoria.chambers80@example.com</a>
+        </div>
+        <p>10/15/15</p>
+        </div>
+<section class="message">
+            <h3>Message User</h3>
+            <form class="widget-container">
+            <input type="text" placeholder="Search for user"
+            class="form-field" id="userField">
+            <textarea placeholder="Message for user" class="form-area"
+            id= "messageField" ></textarea>
+            <button class="button-primary" id="send" >Send</button>
+            </form>
+</section>
+<section class="settings">
+                <h3>Settings</h3>
+                <!-- custom CSS toggle code-->
+                <!-- custom CSS toggle code-->
+                <select class="form-field" id="timezone">
+                <option disabled selected>Select a Timezone</option>
+                <option>Eastern</option>
+                <!-- more options -->
+                </select>
+                <div class="settings-button" >
+                <button class="button-primary" id="save">Save</button>
+                <button class="button-disabled" id="cancel">Cancel</button>
+                </div>
+</section>            
+    
+    </main>
 </body>
 </html>
